@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz rejestracyjny</title>
+    <link rel="stylesheet" href="styl.css"/>
+</head>
+<body id="mainregister">
+    <main>
+
+
+    <h1 class="h2">Formularz rejestracyjny</h1><br>
+    <p class="p3">Zarejstruj się, aby być na bieżąco</p><br>
+<section class="rejestracja">
+    <form id="registrationForm" onsubmit="return validateForm()">
+
+        <input placeholder="Imię" type="text" id="firstName" name="firstName" required><br>
+        <span  id="firstNameError" class="error"></span><br>
+
+        <input placeholder="Nazwisko" type="text" id="lastName" name="lastName" required><br>
+        <span id="lastNameError" class="error"></span><br>
+
+        <input placeholder="Email" type="email" id="email" name="email" required><br>
+        <span id="emailError" class="error"></span><br>
+
+        <input type="date" id="data" name="data" required><br><br>
+
+        <input placeholder="Hasło" type="password" id="password" name="password" required><br>
+        <span id="passwordError" class="error"></span><br>
+        <div class="upobtn">
+            <button class="register" type="submit">Zarejestruj się</button>
+        </div>
+    </form>
+</section>
+</main>
+
+    <script src="main.js"></script>
+</body>
+</html>
